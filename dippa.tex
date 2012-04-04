@@ -1059,17 +1059,66 @@ gives the research area where the methods are often used. Here we used
 table to give an example of tables. Abbreviations and Acronyms is also
 a long table. The difference is that longtables can continue to next
 page.
-
-
  
 % \input{5implementation.tex}
 
+\chapter{Implementation}
+\label{chapter:implementation}
+
+You have now explained how you are going to tackle your problem. 
+Go do that now! Come back when the problem is solved!
+
+Now, how did you solve the problem? 
+Explain how you implemented your solution, be it a software component, a
+custom-made FPGA, a fried jelly bean, or whatever.
+Describe the problems you encountered with your implementation work.
+
 % \input{6evaluation.tex}
+
+\chapter{Evaluation}
+\label{chapter:evaluation}
+
+You have done your work, but that's\footnote{By the way, do \emph{not} use
+shorthands like this in your text! It is not professional! Always write out all
+the words: ``that is''.} not enough. 
+
+You also need to evaluate how well your implementation works.  The
+nature of the evaluation depends on your problem, your method, and
+your implementation that are all described in the thesis before this
+chapter.  If you have created a program for exact-text matching, then
+you measure how long it takes for your implementation to search for
+different patterns, and compare it against the implementation that was
+used before.  If you have designed a process for managing software
+projects, you perhaps interview people working with a waterfall-style
+management process, have them adapt your management process, and
+interview them again after they have worked with your process for some
+time. See what's changed.
+
+The important thing is that you can evaluate your success somehow.
+Remember that you do not have to succeed in making something spectacular; a
+total implementation failure may still give grounds for a very good master's
+thesis---if you can analyze what went wrong and what should have been done.
  
 % \input{7discussion.tex}
+
+\chapter{Discussion}
+\label{chapter:discussion}
+
+At this point, you will have some insightful thoughts on your implementation
+and you may have ideas on what could be done in the future. 
+This chapter is a good place to discuss your thesis as a whole and to show your
+professor that you have really understood some non-trivial aspects of the
+methods you used\ldots
  
 % \input{8conclusions.tex}
 
+\chapter{Conclusions}
+\label{chapter:conclusions}
+
+Time to wrap it up! 
+Write down the most important findings from your work. 
+Like the introduction, this chapter is not very long.
+Two to four pages might be a good limit. 
 
 % Load the bibliographic references
 % ------------------------------------------------------------------
@@ -1082,7 +1131,27 @@ page.
 % ------------------------------------------------------------------
 % If you do not have appendices, comment out the following lines
 \appendix
+
 % \input{appendices.tex}
+
+\chapter{First appendix}
+\label{chapter:first-appendix}
+
+This is the first appendix. You could put some test images or verbose data in an
+appendix, if there is too much data to fit in the actual text nicely.
+
+For now, the Aalto logo variants are shown in Figure~\ref{fig:aaltologo}.
+
+\begin{figure}
+\begin{center}
+\subfigure[In English]{\includegraphics[width=.8\textwidth]{images/aalto-logo-en}}
+\subfigure[Suomeksi]{\includegraphics[width=.8\textwidth]{images/aalto-logo-fi}}
+\subfigure[På svenska]{\includegraphics[width=.8\textwidth]{images/aalto-logo-se}}
+\caption{Aalto logo variants}
+\label{fig:aaltologo}
+\end{center}
+\end{figure}
+
 
 % End of document!
 % ------------------------------------------------------------------
